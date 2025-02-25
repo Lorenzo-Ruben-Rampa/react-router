@@ -7,7 +7,7 @@ import ChiSiamo from "./pages/ChiSiamo";
 import ListaPost from "./pages/ListaPost";
 
 // Layout
-import DefaultLayout from "./layouts/DefaultLayout";
+import DefaultLayout from "./layout/DefaultLayout";
 
 // Array iniziale dati
 const menu = [
