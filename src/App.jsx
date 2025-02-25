@@ -56,18 +56,16 @@ const menu = [
   },
 ];
 
-module.exports = menu;
-
 export default function App() {
-  return
-  <BrowserRouter>
-    <Routes>
-      <Route element={<DefaultLayout />}>
-        <Route index element={<Homepage />} />
-        <Route path="/ChiSiamo" element={< ChiSiamo />} />
-        <Route path="/ListaPost" element={< ListaPost />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
-
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<DefaultLayout />}>
+          <Route index element={< HomePage />} />
+          <Route path="/ChiSiamo" element={< ChiSiamo />} />
+          <Route path="/ListaPost" element={< ListaPost />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
