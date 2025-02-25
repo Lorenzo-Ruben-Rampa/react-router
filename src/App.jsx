@@ -1,4 +1,13 @@
+// Elementi gestione rotte
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Pages
+import HomePage from "./pages/Homepage";
+import ChiSiamo from "./pages/ChiSiamo";
+import ListaPost from "./pages/ListaPost";
+
+// Layout
+import DefaultLayout from "./layouts/DefaultLayout";
 
 // Array iniziale dati
 const menu = [
@@ -49,11 +58,16 @@ const menu = [
 
 module.exports = menu;
 
-export default function DefaultLayout() {
+export default function App() {
   return
-  <div>
-    < Hompage />
-    < Chi Siamo />
-    < Elenco Post />
-  </div>
+  <BrowserRouter>
+    <Routes>
+      <Route element={<DefaultLayout />}>
+        <Route index element={<Homepage />} />
+        <Route path="/ChiSiamo" element={< ChiSiamo />} />
+        <Route path="/ListaPost" element={< ListaPost />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
+
 }
