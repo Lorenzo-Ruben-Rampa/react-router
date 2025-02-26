@@ -61,10 +61,10 @@ export default function App() {
           <Route path="/Post">
             <Route index element={< PostPage />} />
             <Route path="CreatePost" element={< PostCreatePage />} />
-            {/* Rotta dell'error 404 */}
-            <Route path="*" element={<NotFound />} />
             <Route path=":id" element={< PostDetailPage />} />
           </Route>
+          {/* Rotta dell'error 404 */}
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
