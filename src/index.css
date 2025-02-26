@@ -19,6 +19,23 @@
   box-sizing: border-box;
 }
 
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+h2 {
+  text-align: center;
+}
 
 a {
   font-weight: 500;
@@ -44,6 +61,7 @@ h1 {
   width: 100%;
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 button {
@@ -83,6 +101,16 @@ img {
   width: 100%;
 }
 
+.background {
+  background-image: url("../public/imgs/posts/wallpaper-desserts.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.mini {
+  width: 25%;
+}
+
 .checkbox-pb {
   display: flex;
 }
@@ -109,6 +137,7 @@ input {
 
 h2 {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .status {

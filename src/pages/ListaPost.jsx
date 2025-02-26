@@ -1,5 +1,21 @@
-export default function ListaPost() {
+export default function ListaPost(props) {
+
+    const menu = props.postsProp
     return (
-        <h2>ListaPost</h2>
+        <>
+            <div className="container">
+                <ul>
+                    {menu.map((post) => (
+                        <li
+                            key={post.id}>
+                            <h2>{post.title}</h2>
+                            <p className="corsive">Tag: {post.tags.join(", ")}</p>
+                            <div className="img-container"><img src={post.image} /></div>
+                            <p className="content">{post.content}</p>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </>
     )
 }
