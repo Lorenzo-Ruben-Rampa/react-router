@@ -7,7 +7,9 @@ import ChiSiamo from "./pages/ChiSiamo";
 import ListaPost from "./pages/ListaPost";
 import PostPage from "./pages/PostPage";
 import PostCreatePage from "./pages/PostCreatePage";
-import Contatti from "./pages/Contatti"
+import Contatti from "./pages/Contatti";
+import PostDetailPage from "./pages/PostDetailPage";
+
 
 // Layout
 import DefaultLayout from "./layout/DefaultLayout";
@@ -57,6 +59,8 @@ export default function App() {
           <Route path="/Post">
             <Route index element={< PostPage />} />
             <Route path="CreatePost" element={< PostCreatePage />} />
+            <Route path=":id" element={< PostDetailPage />} />
+
           </Route>
         </Route>
       </Routes>

@@ -73,12 +73,12 @@ const ListaPost = () => {
             {
                 menu.map((Post) => (
                     <div className='PostItem' key={Post.id}>
-                        <h2>{Post.name}</h2>
-                        <img src={Post.image} alt={Post.name} />
-                        <p>{Post.tags.join(", ")}</p>
-                        <Link to={`/pizze/${Post.id}`}>Vai al dettaglio</Link>
+                        <h2>{Post.title}</h2>
+                        <img className="centered mini" src={Post.image} alt={Post.title} />
+                        <p className="centered">{Post.tags.join(", ")}</p>
+                        <Link to={`/post/${Post.id}`} className="centered">Vai al dettaglio</Link>
                         <br />
-                        <button onClick={() => deletePost(Post.id)}>
+                        <button onClick={() => deletePost(Post.id)} className="centered">
                             Cancella
                         </button>
                     </div>

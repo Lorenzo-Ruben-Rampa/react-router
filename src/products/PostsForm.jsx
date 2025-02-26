@@ -34,7 +34,7 @@ const PostsForm = () => {
     function handleSubmit(e) {
         e.preventDefault();
         // chiamata verso la API in post con invio dati nuova post
-        axios.post("http://localhost:3000/Posts", formData)
+        axios.post("http://localhost:3000/posts", formData)
             .then(res => {
                 navigate("/posts");
             }

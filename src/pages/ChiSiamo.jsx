@@ -13,7 +13,7 @@ export default function ChiSiamo() {
                                 In questo spazio troverai tutto ciò che riguarda il pane, dalle baguette croccanti alle focacce fragranti, e una vasta gamma di dolci, dai biscotti alle torte più elaborate. Ogni ricetta è pensata per chi ama cucinare, ma anche per chi è alle prime armi e vuole scoprire il piacere di preparare questi deliziosi piatti a casa propria.
                             </p>
                         </div>
-                        <div className="col mini">
+                        <div className="col mini centered">
                             <img src="../public/imgs/posts/pane_fritto_dolce.jpeg" className="background" alt="Pane e Dolci" />
                         </div>
                     </div>

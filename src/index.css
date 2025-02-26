@@ -110,10 +110,13 @@ img {
 
 .mini {
   width: 25%;
-  position: relative;
-  left: 37%;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.centered {
+  position: relative;
+  left: 37%;
 }
 
 .checkbox-pb {
@@ -143,6 +146,7 @@ input {
 h2 {
   width: 100%;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .status {
