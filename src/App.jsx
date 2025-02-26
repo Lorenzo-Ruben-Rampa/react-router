@@ -1,5 +1,5 @@
 // Elementi gestione rotte
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 // Pages
 import HomePage from "./pages/Homepage";
@@ -56,6 +56,7 @@ export default function App() {
           <Route path="/ChiSiamo" element={< ChiSiamo />} />
           <Route path="/ListaPost" element={< ListaPost postsProp={menu} />} />
           <Route path="/Contatti" element={< Contatti />} />
+          <Route path="/posts" element={<Navigate to="/Post" />} />
           <Route path="/Post">
             <Route index element={< PostPage />} />
             <Route path="CreatePost" element={< PostCreatePage />} />
