@@ -18,12 +18,12 @@ const PostsForm = () => {
     // funzione di gestione delle info dei campi
     function handleFormData(e) {
         // gestione del value a seconda del tipo di input
-        const value = e.target.title === "tags" ? e.target.value.split(",") : e.target.value;
+        const value = e.target.name === "tags" ? e.target.value.split(",") : e.target.value;
 
         // setta tramite setState l'oggetto con le info prese dai campi del form
         setFormData((currentFormData) => ({
             ...currentFormData,
-            [e.target.title]: value,
+            [e.target.name]: value,
         }));
     }
 
@@ -54,7 +54,7 @@ const PostsForm = () => {
                     type="text"
                     name="name"
                     onChange={handleFormData}
-                    value={formData.title}
+                    value={formData.name}
                     placeholder='Nome post'
                 />
                 {/* valore immagine */}
