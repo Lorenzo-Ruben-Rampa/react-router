@@ -5,6 +5,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Homepage";
 import ChiSiamo from "./pages/ChiSiamo";
 import ListaPost from "./pages/ListaPost";
+import PostPage from "./pages/PostPage";
+import PostCreatePage from "./pages/PostCreatePage";
+import Contatti from "./pages/Contatti"
 
 // Layout
 import DefaultLayout from "./layout/DefaultLayout";
@@ -40,13 +43,6 @@ export default function App() {
             Tagliatelle alla barbabietola con asparagi`,
       image: "/imgs/posts/pasta_barbabietola.jpeg",
       tags: ["Primi piatti", "Ricette vegetariane"],
-    },
-    {
-      id: 4,
-      title: "Pane fritto dolce",
-      content: `Il pane fritto dolce è la versione più antica dell'odierno french toast! Una deliziosa ricetta antispreco che le nonne preparavano ai bambini per merenda, utilizzando gli ingredienti che si avevano sempre a disposizione in casa: pane raffermo, uova, latte e zucchero, che noi abbiamo deciso di aromatizzare con un pizzico di cannella. Facile e veloce da realizzare, il pane fritto dolce vi riporterà con la mente ai sapori dell'infanzia… gustatelo da solo o accompagnatelo con frutta fresca e yogurt per uno spuntino tanto goloso quanto genuino!`,
-      image: "/imgs/posts/pane_fritto_dolce.jpeg",
-      tags: ["Dolci", "Dolci veloci", "Ricette veloci", "Ricette vegetariane"],
     }
   ];
 
@@ -57,6 +53,9 @@ export default function App() {
           <Route index element={< HomePage />} />
           <Route path="/ChiSiamo" element={< ChiSiamo />} />
           <Route path="/ListaPost" element={< ListaPost postsProp={menu} />} />
+          <Route path="/Contatti" element={< Contatti />} />
+          <Route path="/Post" element={< PostPage />} />
+          <Route path="/Post/CreatePost" element={< PostCreatePage />} />
         </Route>
       </Routes>
     </BrowserRouter>

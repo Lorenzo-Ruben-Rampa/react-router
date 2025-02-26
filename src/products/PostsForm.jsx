@@ -71,7 +71,7 @@ const PostsForm = () => {
                     name="tags"
                     onChange={handleFormData}
                     value={formData.tags}
-                    placeholder='Ingredienti post'
+                    placeholder='Tag dei post'
                 />
                 {/* bottone di invio info */}
                 <button>Aggiungi</button>

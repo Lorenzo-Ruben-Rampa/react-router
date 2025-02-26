@@ -1,12 +1,12 @@
-// importiamo il componente delle pizze
-import PostsForm from "./../components/PostsForm";
+// importiamo il componente dei post
+import ListaPost from "./ListaPost";
 
 
 export default function PostsPage() {
     return (
         <>
-            <h2>Ciao sono la pagine delle Pizze</h2>
-            <PostsForm />
+            <h2>Ciao sono la pagina dei post</h2>
+            <ListaPost />
         </>
     );
 }

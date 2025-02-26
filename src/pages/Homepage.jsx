@@ -11,7 +11,7 @@ export default function Homepage() {
                             <p className="post-excerpt">
                                 La pasticceria italiana è famosa per i suoi dolci che raccontano storie di tradizione e creatività. In questo post esploreremo alcuni dei dolci più amati, come il tiramisù, la cassata e la pastiera napoletana.
                             </p>
-                            <img src="../public/imgs/posts/wallpaper-desserts.jgp" alt="Dolci Tipici Italiani" className="post-image" />
+                            <img src="../public/imgs/posts/wallpaper-desserts.jpg" alt="Dolci Tipici Italiani" className="post-image" />
                             <a href="#dolci" className="read-more">Leggi di più</a>
                         </article>
                         <article className="post">

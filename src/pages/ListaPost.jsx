@@ -4,7 +4,8 @@ export default function ListaPost(props) {
     return (
         <>
             <div className="container">
-                <ul>
+                <h1>Lista dei post</h1>
+                {/* <ul>
                     {menu.map((post) => (
                         <li
                             key={post.id}>
@@ -14,7 +15,7 @@ export default function ListaPost(props) {
                             <p className="content">{post.content}</p>
                         </li>
                     ))}
-                </ul>
+                </ul> */}
             </div>
         </>
     )
