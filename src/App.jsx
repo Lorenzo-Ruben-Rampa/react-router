@@ -54,8 +54,10 @@ export default function App() {
           <Route path="/ChiSiamo" element={< ChiSiamo />} />
           <Route path="/ListaPost" element={< ListaPost postsProp={menu} />} />
           <Route path="/Contatti" element={< Contatti />} />
-          <Route path="/Post" element={< PostPage />} />
-          <Route path="/Post/CreatePost" element={< PostCreatePage />} />
+          <Route path="/Post">
+            <Route index element={< PostPage />} />
+            <Route path="CreatePost" element={< PostCreatePage />} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
